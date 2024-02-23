@@ -5,10 +5,10 @@ import path from 'path'
 
 export const Media: CollectionConfig = {
   access: {
-    create: () => false,
-    delete: () => false,
+    create: () => true,
+    delete: () => true,
     read: () => true,
-    update: () => false,
+    update: () => true,
   },
   admin: {
     description: 'Creating, updating, and deleting media is disabled for this demo.',

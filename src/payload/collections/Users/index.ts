@@ -12,7 +12,7 @@ import { sanitizeDemoAdmin } from './hooks/sanitizeDemoAdmin'
 const Users: CollectionConfig = {
   access: {
     admin: ({ req: { user } }) => checkRole(['admin'], user),
-    create: () => false,
+    create: admins,
     delete: () => false,
   },
   admin: {

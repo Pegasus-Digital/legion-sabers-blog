@@ -18,7 +18,6 @@ import { Pages } from './collections/Pages'
 import { Posts } from './collections/Posts'
 import { Projects } from './collections/Projects'
 import Users from './collections/Users'
-import BeforeLogin from './components/BeforeLogin'
 import { clearDBEndpoint, resetDBEndpoint, seedDBEndpoint } from './endpoints/resetDB'
 import { Footer } from './globals/Footer'
 import { Header } from './globals/Header'
@@ -32,31 +31,7 @@ const m = path.resolve(__dirname, './emptyModuleMock.js')
 
 export default buildConfig({
   admin: {
-    autoLogin: {
-      email: 'demo@pegasusds.com.br',
-      password: 'demo',
-      prefillOnly: true,
-    },
     bundler: webpackBundler(), // bundler-config
-    components: {
-      beforeLogin: [BeforeLogin],
-    },
-    // livePreview: {
-    //   breakpoints: [
-    //     {
-    //       name: 'mobile',
-    //       height: 667,
-    //       label: 'Mobile',
-    //       width: 375,
-    //     },
-    //   ],
-    // },
-    // components: {
-    //   graphics: {
-    //     Icon,
-    //     Logo,
-    //   },
-    // },
     meta: {
       favicon: './public/favicon.ico',
       ogImage: './puclic/logo.svg',

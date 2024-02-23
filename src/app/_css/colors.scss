@@ -19,29 +19,29 @@
   --color-base-750: rgb(60, 60, 60);
   --color-base-800: rgb(47, 47, 47);
   --color-base-850: rgb(34, 34, 34);
-  --color-base-900: rgb(20, 20, 20);
-  --color-base-950: rgb(7, 7, 7);
-  --color-base-1000: rgb(0, 0, 0);
+  --color-base-900: hsl(220, 100%, 2.5%);
+  --color-base-950: hsl(220, 100%, 1.25%);
+  --color-base-1000: hsl(220, 100%, 0%);
 
-  --color-success-50: rgb(247, 255, 251);
-  --color-success-100: rgb(240, 255, 247);
-  --color-success-150: rgb(232, 255, 243);
-  --color-success-200: rgb(224, 255, 239);
-  --color-success-250: rgb(217, 255, 235);
-  --color-success-300: rgb(209, 255, 230);
-  --color-success-350: rgb(201, 255, 226);
-  --color-success-400: rgb(193, 255, 222);
-  --color-success-450: rgb(186, 255, 218);
-  --color-success-500: rgb(178, 255, 214);
-  --color-success-550: rgb(160, 230, 193);
-  --color-success-600: rgb(142, 204, 171);
-  --color-success-650: rgb(125, 179, 150);
-  --color-success-700: rgb(107, 153, 128);
-  --color-success-750: rgb(89, 128, 107);
-  --color-success-800: rgb(71, 102, 86);
-  --color-success-850: rgb(53, 77, 64);
-  --color-success-900: rgb(36, 51, 43);
-  --color-success-950: rgb(18, 25, 21);
+  --color-success-50: #f0f9ff;
+  --color-success-100: #e0f3fe;
+  --color-success-150: #d1edfd; /* Interpolated */
+  --color-success-200: #b9e8fe;
+  --color-success-250: #a9e2fd; /* Interpolated */
+  --color-success-300: #7bd7fe;
+  --color-success-350: #5acffe; /* Interpolated */
+  --color-success-400: #36c3fa;
+  --color-success-450: #28bdf9; /* Interpolated */
+  --color-success-500: #1ab6f4;
+  --color-success-550: #0fa9f1; /* Interpolated */
+  --color-success-600: #008ac9;
+  --color-success-650: #007bb4; /* Interpolated */
+  --color-success-700: #016ea3;
+  --color-success-750: #035f94; /* Interpolated */
+  --color-success-800: #055c87;
+  --color-success-850: #074f75; /* Interpolated */
+  --color-success-900: #0b4d6f;
+  --color-success-950: #07314a;
 
   --color-warning-50: rgb(255, 255, 246);
   --color-warning-100: rgb(255, 255, 237);

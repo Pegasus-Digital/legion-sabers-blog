@@ -1,7 +1,7 @@
 @use '../../_css/queries.scss' as *;
 
 .footer {
-  padding: calc(var(--base) * 4) 0;
+  padding: calc(var(--base) * 1.6) 0;
   background-color: var(--theme-elevation-1000);
   color: var(--theme-elevation-0);
 
@@ -40,4 +40,19 @@
   > * {
     text-decoration: none;
   }
+}
+
+.bottom_details {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: center;
+}
+.bottom_text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
 }

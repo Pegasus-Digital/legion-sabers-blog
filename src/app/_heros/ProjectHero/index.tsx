@@ -40,16 +40,6 @@ export const ProjectHero: React.FC<{
           </div>
           <h1 className={classes.title}>{title}</h1>
           {hero && <RichText content={hero.richText} />}
-          <div>
-            <p className={classes.description}>
-              Disclaimer: This content is fabricated and for demonstration purposes only. To edit
-              this project,&nbsp;
-              <Link href={`${process.env.NEXT_PUBLIC_SERVER_URL}/admin/collections/projects/${id}`}>
-                navigate to the admin dashboard
-              </Link>
-              .
-            </p>
-          </div>
         </div>
         <div className={classes.media}>
           <div className={classes.mediaWrapper}>

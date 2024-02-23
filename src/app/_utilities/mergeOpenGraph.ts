@@ -4,7 +4,7 @@ const defaultOpenGraph: Metadata['openGraph'] = {
   description: 'A demo built with Next.js. and PayloadCMS',
   images: [
     {
-      url: 'https://pegasusds.com/images/og-image.jpg',
+      url: 'https://legionsabers.com/images/og-image.jpg',
     },
   ],
   siteName: 'Pegasus Demo',

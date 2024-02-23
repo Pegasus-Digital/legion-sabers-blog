@@ -74,14 +74,6 @@ export const PostHero: React.FC<{
           </p>
           <div>
             <p className={classes.description}>{`${description ? `${description} ` : ''}`}</p>
-            <p>
-              Disclaimer: This content is fabricated and for demonstration purposes only. To edit
-              this post,&nbsp;
-              <Link href={`${process.env.NEXT_PUBLIC_SERVER_URL}/admin/collections/posts/${id}`}>
-                navigate to the admin dashboard
-              </Link>
-              .
-            </p>
           </div>
         </div>
         <div className={classes.media}>

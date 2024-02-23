@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -27,21 +28,31 @@ export async function Footer() {
     <footer className={classes.footer}>
       <Gutter className={classes.wrap}>
         <Link href="/">
-          <picture>
-            <img alt="Pegasus Logo" className={classes.logo} src="./public/favicon.svg" />
-          </picture>
+          <Image
+            alt="Legion Logo"
+            className={classes.logo}
+            height={150}
+            src="/images/legion_logo.svg"
+            width={150}
+          />
         </Link>
         <nav className={classes.nav}>
-          <ThemeSelector />
+          {/* <ThemeSelector /> */}
           {navItems.map(({ link }, i) => {
             return <CMSLink key={i} {...link} />
           })}
-          <Link href="/admin">Admin</Link>
-
-          <Link href="https://pegasusds.com.br" rel="noopener noreferrer" target="_blank">
-            Pegasus Digital Solutions
-          </Link>
+          {/* <Link href="/admin">Admin</Link> */}
         </nav>
+      </Gutter>
+      <Gutter className={classes.wrap}>
+        <div className={classes.bottom_details}>
+          <div className={classes.bottom_text}>
+            Developed by{' '}
+            <Link href="https://pegasusds.com.br" rel="noopener noreferrer" target="_blank">
+              Pegasus Digital Solutions
+            </Link>
+          </div>
+        </div>
       </Gutter>
     </footer>
   )

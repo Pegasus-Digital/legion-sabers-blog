@@ -22,12 +22,7 @@ const start = async (): Promise<void> => {
   await payload.init({
     express: app,
     onInit: async () => {
-      payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`)
-
-      // Clear and reset database on server start
-      // NOTE - this is only for demo purposes and should not be used
-      // for production sites with real data
-      await seed()
+      payload.logger.info(`Admin URL: ${payload.getAdminURL()}`)
     },
     secret: process.env.PAYLOAD_SECRET || '',
   })

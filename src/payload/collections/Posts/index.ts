@@ -17,7 +17,7 @@ import { revalidatePost } from './hooks/revalidatePost'
 export const Posts: CollectionConfig = {
   access: {
     create: admins,
-    delete: () => false,
+    delete: admins,
     read: adminsOrPublished,
     update: admins,
   },

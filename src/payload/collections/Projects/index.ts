@@ -16,8 +16,8 @@ import { revalidateProject } from './hooks/revalidateProject'
 export const Projects: CollectionConfig = {
   access: {
     create: admins,
-    delete: () => false,
-    read: adminsOrPublished,
+    delete: admins,
+    read: () => false,
     update: admins,
   },
   admin: {

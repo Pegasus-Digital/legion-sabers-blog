@@ -3,8 +3,6 @@ import next from 'next'
 import nextBuild from 'next/dist/build'
 import path from 'path'
 
-import { seed } from './payload/cron/reset'
-
 dotenv.config({
   path: path.resolve(__dirname, '../.env'),
 })
@@ -19,9 +17,7 @@ const start = async (): Promise<void> => {
   await payload.init({
     express: app,
     onInit: async () => {
-      payload.logger.info(`Payload Admin URL: ${payload.getAdminURL()}`)
-
-      await seed()
+      payload.logger.info(`Admin URL: ${payload.getAdminURL()}`)
     },
     secret: process.env.PAYLOAD_SECRET || '',
   })
@@ -51,7 +47,7 @@ const start = async (): Promise<void> => {
       payload.logger.info('Starting Next.js...')
 
       app.listen(PORT, () => {
-        payload.logger.info(`Next.js App URL: ${process.env.PAYLOAD_PUBLIC_SERVER_URL}`)
+        payload.logger.info(`Website URL: ${process.env.PAYLOAD_PUBLIC_SERVER_URL}`)
       })
     })
     .catch((err) => {

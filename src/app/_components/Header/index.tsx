@@ -2,6 +2,7 @@
   /* eslint-disable @next/next/no-img-element */
 }
 
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -29,15 +30,12 @@ export async function Header() {
       <header className={classes.header}>
         <Gutter className={classes.wrap}>
           <Link href="/">
-            {/* Cannot use the `<picture>` element here with `srcSet`
-              This is because the theme is able to be overridden by the user
-              And so `@media (prefers-color-scheme: dark)` will not work
-              Instead, we just use CSS to invert the color via `filter: invert(1)` based on `[data-theme="dark"]`
-            */}
-            <img
+            <Image
               alt="Pegasus Logo"
               className={classes.logo}
-              src="./assets/images/pegasus-logo.svg"
+              height={150}
+              src="/images/legion_logo.svg"
+              width={150}
             />
           </Link>
           <HeaderNav header={header} />
