@@ -1,14 +1,14 @@
 import type { Metadata } from 'next'
 
 const defaultOpenGraph: Metadata['openGraph'] = {
-  description: 'A demo built with Next.js. and PayloadCMS',
+  description: 'Legion Sabers Blog',
   images: [
     {
       url: 'https://legionsabers.com/images/og-image.jpg',
     },
   ],
-  siteName: 'Pegasus Demo',
-  title: 'Pegasus Demo',
+  siteName: 'Legion Sabers Blog',
+  title: 'Legion Sabers Blog',
   type: 'website',
 }
 
